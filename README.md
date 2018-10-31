@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.com/chapman-phys220-2018f/CHANGEME.svg?branch=master)](https://travis-ci.com/chapman-phys220-2018f/CHANGEME)
-
+https://travis-ci.com/chapman-phys220-2018f/cw09-original-team-name.svg?branch=master
 # PHYS220/MATH220/CPSC220 CW 9
 
 **Author(s):** **Paul Hatem, Natanael Atapay**
