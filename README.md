@@ -30,9 +30,9 @@ The lowest-order error is second-order in $h$, since the first-order error cance
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
+For this assigment I understood that it is good to know how to write in $\LaTeX$, especially pmatrix...,it also shoes that thinking before starting is an important step, especially when math is involved in the code (ie matrices in our case).
 
-**CHANGEME**
+Natanael Alpay
 
 ## Honor Pledge
 
