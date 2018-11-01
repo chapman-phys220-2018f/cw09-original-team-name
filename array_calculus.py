@@ -5,16 +5,16 @@ def gradient(x):
     """
     Computes the differential operator for a given set of points x. 
     """
-    len(x)=b
+    b=len(x)
     dx = x[1] - x[0]
     ax = ((np.tri(b, b, 0 , dtype=int) - np.tri(b, b, 1,dtype=int)))
     ax= ax + (np.tri(b, b, -1, dtype=int ) - np.tri(b, b, -2, dtype=int))
     ax= ax / (2*dx)
-    ax[0][0]    = -1 / dx  #b=newgradient
-    ax[1][0]    = 1 / dx
-    ax[-1][-1]  = 1 / dx
-    ax[-2][-1]  = -1 / dx
-    return b
+    ax[0][0]    = 1 / dx  #b=newgradient
+    ax[1][1]    = -1 / dx
+    ax[-1][-1]  = -1 / dx
+    ax[-2][-2]  = 1 / dx
+    return ax
 
 def x():
     """Plots x^2"""
@@ -38,17 +38,18 @@ def x():
     
 def sinx():
     """Plots sin(x)"""
-    x = np.arange(8)
+    x = np.linspace(0,8,num=100, endpoint=True)
     s = np.sin(x)
-    sp = gradient(s)
-
+    d = gradient(x)
+    print(d)
+    
     graph1 = plt.axes()
     plt.xlabel=("x")
     plt.ylabel=("y")
     plt.title=("sin(x)")
 
     graph1.plot(x, s, label="s(x)")
-    graph1.plot(x, sp, color="Red", label="s'(x)")
+    graph1.plot(x, d @ s, color="Red", label="s'(x)")
 
     graph1.legend()
     plt.show()
@@ -73,4 +74,3 @@ def plot(x, f, gradient, Name):
     axis.legend()
 
     plt.show()
-
