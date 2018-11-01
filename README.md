@@ -3,7 +3,7 @@
 
 # PHYS220/MATH220/CPSC220 CW 9
 
-**Author(s):** **Paul Hatem, Natanael Atapay**
+**Author(s):** **Paul Hatem, Natanael Alpay**
 
 ## Specification
 
@@ -43,4 +43,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**Paul Hatem, Natanael Atapay**
+**Paul Hatem, Natanael Alpay**
