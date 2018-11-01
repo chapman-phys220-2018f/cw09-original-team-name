@@ -53,14 +53,15 @@ def sinx():
     graph1.legend()
     plt.show()
 
-def plot(x, f, Name, gradient):
+def plot(x, f, gradient, Name):
     """
-    Graphs a given function    """
+    Graphs a function
+    """
 
-    ft = plt.figure(figsize=(16,9))
+    fplot = plt.figure(figsize=(16,9))
     axis = plt.axis()
-    funcGen = np.vectorize(f)
-    y = funcGen(x)
+    g= np.vectorize(f)
+    y = g(x)
     grad = gradient(x)
     plt.xlim()
     plt.ylim()
