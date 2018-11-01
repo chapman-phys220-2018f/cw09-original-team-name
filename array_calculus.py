@@ -5,13 +5,15 @@ def gradient(x):
     """
     Computes the differential operator for a given set of points x. 
     """
+    len(x)=b
     dx = x[1] - x[0]
-    a = (((np.tri(len(x), len(x), 0 , dtype=int) - np.tri(len(x), len(x), 1,dtype=int))) + (np.tri(len(x), len(x), -1, dtype=int ) - np.tri(len(x), len(x), -2, dtype=int)))
-    b=a / (2*dx)
-    b[0][0]    = -1 / dx  #b=newgradient
-    b[1][0]    = 1 / dx
-    b[-1][-1]  = 1 / dx
-    b[-2][-1]  = -1 / dx
+    ax = ((np.tri(b, b, 0 , dtype=int) - np.tri(b, b, 1,dtype=int)))
+    ax= ax + (np.tri(b, b, -1, dtype=int ) - np.tri(b, b, -2, dtype=int))
+    ax= ax / (2*dx)
+    ax[0][0]    = -1 / dx  #b=newgradient
+    ax[1][0]    = 1 / dx
+    ax[-1][-1]  = 1 / dx
+    ax[-2][-1]  = -1 / dx
     return b
 
 def x():
