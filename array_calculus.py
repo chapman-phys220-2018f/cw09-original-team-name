@@ -68,7 +68,7 @@ def plot(x, f, gradient, Name):
     plt.ylim()
     plt.xlabel("x")
     plt.ylabel("y")
-    title = 'laber {},label {}'
+    title = 'label {},label {}'
     plt.title(title.format("$f(x) = $" + Name,"$Df(x)=$" +gradient)) 
 
     axis.legend()
