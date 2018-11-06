@@ -1,2 +1,2 @@
 #Put Tests Here
-return 0
+assert True
